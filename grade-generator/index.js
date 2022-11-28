@@ -1,7 +1,10 @@
+
+//link to the front end (HTML, CSS.)
 const form = document.getElementById("gradesForm");
 const input = document.getElementById("marks");
 const message = document.getElementById("message");
 let button = document.getElementById('button')
+//Add the event listener to trigger submit event when the the submit button is clicked.
 
 form.addEventListener("submit", (event) => {
     event.preventDefault();
@@ -11,7 +14,7 @@ form.addEventListener("submit", (event) => {
 function validateInput(input){
     console.log(input)
     console.log(input.value)
-
+//conditional statement to evaluate student grade from user input
     const checkInput = input.value;
     if (checkInput > 79 && checkInput <= 100) {
     console.log("A");
