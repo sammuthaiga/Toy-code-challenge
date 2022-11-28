@@ -9,14 +9,14 @@ form.addEventListener("submit", (event) =>{
     event.preventDefault();
     detectedSpeed(input);
 });
-
+//function to be called by the event listener
 function detectedSpeed(input){
     console.log(input)
     console.log(input.value)
     const detectedSpeed = input.value;
-//conditional statement to evaluate student grade from user input
-    let points;
-    let currentPoints = (detectedSpeed - 70) / 5;
+//conditional statement to evaluate the speed from the user input
+    //let points;
+    let currentPoints = (detectedSpeed - 70)/5;
         if(detectedSpeed <= 70) {
             return message.textContent = 'OK';
         }else if(detectedSpeed > 70 && detectedSpeed < 130){
